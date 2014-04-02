@@ -70,8 +70,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,
 .navbar-inverse .navbar-brand,
 .navbar-inverse .navbar-nav > li > a {
     color: #e0e0e0;
-    padding-left: 0;
-    padding-right: 0;
 }
 .navbar-inverse .navbar-nav > li.dropdown:hover > a,
 .navbar-inverse .navbar-nav > li.dropdown:focus > a {
@@ -80,24 +78,31 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,
 
 /* equal spacing for main menu items */
 /* assumes there are a total of seven items */
-.navbar-main .navbar-header {
-    width: 12%;
-}
-.navbar-main .navbar-header .navbar-brand {
-    width: 100%;
-}
-.navbar-main .navbar-collapse {
-    padding-left: 0;
-    padding-right: 0;
-}
-.navbar-main .navbar-nav {
-    width: 88%;
-    padding-left: 0;
-    padding-right: 0;
-}
-.navbar-main .navbar-nav > li {
-    min-width: 14.2%;
-    margin-right: 2%;
+@media (min-width: 768px) {
+    .navbar-inverse .navbar-brand,
+    .navbar-inverse .navbar-nav > li > a {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .navbar-main .navbar-header {
+        width: 12%;
+    }
+    .navbar-main .navbar-header .navbar-brand {
+        width: 100%;
+    }
+    .navbar-main .navbar-collapse {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .navbar-main .navbar-nav {
+        width: 88%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .navbar-main .navbar-nav > li {
+        min-width: 14.2%;
+        margin-right: 2%;
+    }
 }
 
 /* show dropdown menu on hover */
