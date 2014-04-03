@@ -1,8 +1,8 @@
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: 400;
-    background: #ddd;
-    font-size: 16px;
+    background: #eee;
+    font-size: 18px;
 }
 .container {
     background: #fff;
@@ -12,7 +12,10 @@ body {
     width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
 .navbar-nav a,
 .navbar-brand {
     font-family: 'Open Sans', sans-serif;
@@ -20,7 +23,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,
 }
 
 .alert {
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .navbar-main {
@@ -151,3 +154,19 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 }
 
 
+
+
+/* footer */
+.footer {
+    background: #545059 url(footer_shadow.png) center top no-repeat;
+    margin-top: 40px;
+}
+.nu-logo img {
+    margin: 25px 50px;
+    height: 80px;
+}
+.footer-text p {
+    color: #e0e0e0;
+    margin-top: 24px;
+    font-size: 15px;
+}
