@@ -1,6 +1,7 @@
 body {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
+    text-rendering: optimizeLegibility;
     background: #eee;
     font-size: 18px;
 }
@@ -62,14 +63,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     border-radius: 0;
 }
 
-.navbar-main .nav {
-    width: 90%;
-}
-.navbar-main .nav > li {
-    padding-left: .1%;
-    padding-right: .1%;
-}
-
 .navbar-inverse .navbar-brand,
 .navbar-inverse .navbar-nav > li > a {
     color: #e0e0e0;
@@ -82,6 +75,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 /* equal spacing for main menu items */
 /* assumes there are a total of seven items */
 @media (min-width: 768px) {
+    .navbar-main .nav {
+        width: 90%;
+    }
+    .navbar-main .nav > li {
+        padding-left: .1%;
+        padding-right: .1%;
+    }
+
     .navbar-inverse .navbar-brand,
     .navbar-inverse .navbar-nav > li > a {
         padding-left: 0;
@@ -106,27 +107,24 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
         min-width: 14.2%;
         margin-right: 2%;
     }
-}
 
-/* show dropdown menu on hover */
-ul.nav li.dropdown:hover > ul.dropdown-menu {
-    display: block;    
-}
-
-/* center main menu dropdowns */
-.navbar-main .dropdown-menu {
-    width: 160px;
-    left: 50%;
-    margin-left: -80px;
+    /* changes that aren't relevant to mobile view */
+    /* center main menu dropdowns */
+    .navbar-main .dropdown-menu {
+        width: 160px;
+        left: 50%;
+        margin-left: -80px;
+    }
+    /* show dropdown menu on hover */
+    ul.nav li.dropdown:hover > ul.dropdown-menu {
+        display: block;    
+    }
 }
 
 /* tweak homepage news spacing */
 .news h3 {
     margin-top: 6px;
 }
-
-
-
 
 
 
@@ -162,11 +160,18 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     margin-top: 40px;
 }
 .nu-logo img {
-    margin: 25px 50px;
+    margin: 25px 40px;
     height: 80px;
 }
 .footer-text p {
-    color: #e0e0e0;
+    color: #e5e5e5;
     margin-top: 24px;
     font-size: 15px;
+}
+.footer-text a {
+    color: #fff;
+}
+.footer-text a:hover {
+    text-decoration: none;
+    border-bottom: 1px dotted #fff;
 }
