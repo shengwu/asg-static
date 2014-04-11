@@ -123,16 +123,31 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 
 /* homepage stuff */
-/* tweak homepage announcements spacing */
-.announcements h3 {
-    margin-top: 6px;
+@media (min-width: 768px) {
+    /* tweak homepage announcements spacing */
+    .announcements h3 {
+        margin-top: 0;
+    }
+}
+.announcements p {
+    margin-bottom: 0;
+}
+.announcements li {
+    margin-bottom: 16px;
+}
+.announcements li > p {
+    font-weight: bold;
 }
 /* recent legislation tweaks */
+.no-bullets {
+    list-style-type: none;
+    padding-left: 0;
+}
 ul.legislation,
 ul.events,
 ul.in-news {
-    list-style-type: none;
     font-size: 16px;
+    list-style-type: none;
     padding-left: 0;
 }
 ul.legislation li,
@@ -172,6 +187,32 @@ ul.in-news small {
 }
 
 
+/* mobile tweaks */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    h3 {
+        font-size: 23px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    h5 {
+        font-size: 18px;
+    }
+    h6 {
+        font-size: 16px;
+    }
+    body {
+        font-size: 15px;
+    }
+}
+
+
 
 
 /* footer */
@@ -195,6 +236,21 @@ ul.in-news small {
     text-decoration: none;
     border-bottom: 1px dotted #fff;
 }
+
+
+
+
+
+/* student resources page */
+.list-group.no-border .list-group-item {
+    border: none;
+}
+.services .list-group img + p {
+    margin-top: 10px;
+}
+
+
+
 
 
 
