@@ -163,28 +163,29 @@ ul.in-news small {
 }
 
 
-/* changes for small screen width */
-@media (min-width: 768px) and (max-width: 991px) {
-    .news h3 {
-        margin-top: 20px;
-    }
-    .navbar-brand,
-    .navbar-main .nav > li > a {
-        padding: 15px 0;
-        font-size: 16px;
-    }
-    .navbar-main .dropdown-menu {
-        min-width: 140px; /* override parent style */
-        width: 140px;
-        margin-left: -70px;
-    }
-    .navbar-main .navbar-nav > li {
-        min-width: 12%;
-    }
-    .navbar-main .dropdown-menu li > a {
-        font-size: 15px;
-    }
+
+/* footer */
+.footer {
+    background: #545059 url(footer_shadow.png) center top no-repeat;
+    margin-top: 40px;
 }
+.footer-text p {
+    color: #e5e5e5;
+    margin-top: 24px;
+    font-size: 15px;
+}
+.footer-text a {
+    color: #fff;
+}
+.footer-text a:hover {
+    text-decoration: none;
+    border-bottom: 1px dotted #fff;
+}
+.nu-logo img {
+    margin: 25px 40px;
+    height: 80px;
+}
+
 
 
 /* mobile tweaks */
@@ -210,31 +211,47 @@ ul.in-news small {
     body {
         font-size: 15px;
     }
+    .nu-logo img {
+        display: block;
+        margin: 30px auto;
+        max-width: 100%;
+        height: auto;
+    }
+    .footer-text {
+        text-align: center;
+    }
 }
 
 
-
-
-/* footer */
-.footer {
-    background: #545059 url(footer_shadow.png) center top no-repeat;
-    margin-top: 40px;
-}
-.nu-logo img {
-    margin: 25px 40px;
-    height: 80px;
-}
-.footer-text p {
-    color: #e5e5e5;
-    margin-top: 24px;
-    font-size: 15px;
-}
-.footer-text a {
-    color: #fff;
-}
-.footer-text a:hover {
-    text-decoration: none;
-    border-bottom: 1px dotted #fff;
+/* changes for small screen width */
+@media (min-width: 768px) and (max-width: 991px) {
+    .news h3 {
+        margin-top: 20px;
+    }
+    .navbar-brand,
+    .navbar-main .nav > li > a {
+        padding: 15px 0;
+        font-size: 16px;
+    }
+    .navbar-main .dropdown-menu {
+        min-width: 140px; /* override parent style */
+        width: 140px;
+        margin-left: -70px;
+    }
+    .navbar-main .navbar-nav > li {
+        min-width: 12%;
+    }
+    .navbar-main .dropdown-menu li > a {
+        font-size: 15px;
+    }
+    .nu-logo img {
+        margin: 20px 30px;
+        height: 65px;
+    }
+    .footer-text p {
+        margin-top: 20px;
+        font-size: 12px;
+    }
 }
 
 
@@ -244,6 +261,9 @@ ul.in-news small {
 /* student resources page */
 .list-group.no-border .list-group-item {
     border: none;
+}
+.list-group-item-text {
+    line-height: 1.4;
 }
 .services .list-group img + p {
     margin-top: 10px;
