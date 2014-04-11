@@ -104,8 +104,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
         padding-right: 0;
     }
     .navbar-main .navbar-nav > li {
-        min-width: 14.2%;
-        margin-right: 2%;
+        /* BELOW: specify for each width */
+        /* width: 14.2%; */
+        /* margin-right: 2%; */
     }
 
     /* changes that aren't relevant to mobile view */
@@ -122,12 +123,32 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 
-/* homepage stuff */
-@media (min-width: 768px) {
-    /* tweak homepage announcements spacing */
-    .announcements h3 {
-        margin-top: 0;
+/* small breakpoint */
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-main .navbar-nav > li {
+        margin-right: .8em;
     }
+}
+/* medium breakpoint */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .navbar-main .navbar-nav > li {
+        margin-left: .5em;
+        margin-right: 1.5em;
+    }
+}
+/* large breakpoint */
+@media (min-width: 1200px) {
+    .navbar-main .navbar-nav > li {
+        margin-left: .9em;
+        margin-right: 2.5em;
+    }
+}
+
+
+/* homepage stuff */
+/* tweak homepage announcements spacing */
+.announcements h3 {
+    margin-top: 0;
 }
 .announcements p {
     margin-bottom: 0;
@@ -138,6 +159,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .announcements li > p {
     font-weight: bold;
 }
+
+@media (max-width: 991px) {
+    .homepage-slideshow {
+        margin-top: 20px;
+    }
+}
+
+
 /* recent legislation tweaks */
 .no-bullets {
     list-style-type: none;
@@ -210,6 +239,9 @@ ul.in-news small {
     }
     body {
         font-size: 15px;
+    }
+    .alert {
+        font-size: 16px;
     }
     .nu-logo img {
         display: block;
