@@ -206,10 +206,6 @@ ul.in-news small {
 .footer-text a {
     color: #fff;
 }
-.footer-text a:hover {
-    text-decoration: none;
-    border-bottom: 1px dotted #fff;
-}
 .nu-logo img {
     margin: 25px 40px;
     height: 80px;
